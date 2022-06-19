@@ -47,8 +47,7 @@ export default {
         email: this.email,
         password: this.password,
       });
-      console.log(response);
-      sessionStorage.setItem("user-info", JSON.stringify(response));
+      localStorage.setItem("user-info", JSON.stringify(response));
       if (response.data.message == "good") {
         alert("登入成功");
         this.$router.push("/");
