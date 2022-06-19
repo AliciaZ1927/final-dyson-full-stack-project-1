@@ -1,20 +1,48 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Home from '../views/homePage.vue'
+import HairPage from '../views/hairPage.vue'
+import LoginPage from '../views/loginPage.vue'
+import CartPage from '../views/CartPage.vue'
+import AirpurifierPage from '../views/airPurifierPage.vue'
+import VacuumCleanerPage from '../views/VacuumCleanerPage.vue'
+import memberPage from '../views/memberPage.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: Home
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
+    path: '/hair',
+    name: 'hair',
+    component: HairPage
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: LoginPage
+  },
+  {
+    path: '/member',
+    name: 'member',
+    component: memberPage
+  },
+  {
+    path: '/cart',
+    name: 'cart',
+    component: CartPage
+  },
+  {
+    path: '/airpurifier',
+    name: 'Airpurifier',
+    component: AirpurifierPage
+  },
+  {
+    path: '/VacuumCleaner',
+    name: 'VacuumCleaner',
+    component: VacuumCleanerPage
+  },
 ]
 
 const router = createRouter({
