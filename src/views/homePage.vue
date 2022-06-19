@@ -224,7 +224,10 @@ section.second video {
   background-repeat: no-repeat;
 }
 section span {
+  font-size:60px;
   background-color: #161616af;
+  font-family: 'Caveat', cursive;
+  border-radius:50px;
 }
 section div .justbuy {
   font-size: 2.5rem;
